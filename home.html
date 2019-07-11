@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		@font-face {
+			font-family: "Apercu";
+			src: url(fonts/Apercu.ttf);
+		}
+
+		h3, h4 {
+			font-family: Apercu;
+		}
+
+		a {
+			font-family: Apercu;
+		}
+
+		p#titles {
+			font-family: Apercu;
+			font-weight: bold;
+			font-size: 22px;
+		}
+
+		p {
+			font-family: Apercu;
+			font-size: 16px;
+		}
+
+		p#headerannouncement1 {
+			font-family: Apercu;
+		}
+
+		#headerannouncement1::after {
+			content: '';
+			border-bottom: 3px solid #ea5a5a;
+			height: 65px;
+			width: 65px;
+			position: absolute;
+			transform: translate(-220%);
+		}
+
+		#headerannouncement2::after {
+			content: '';
+			border-bottom: 3px solid #ea5a5a;
+			height: 65px;
+			width: 65px;
+			position: absolute;
+			transform: translate(-280%);
+		}
+
+		.post-container {
+			height: 230px;
+			border-radius: 10px;
+			margin: auto;
+			overflow: hidden;
+			position: relative;
+			cursor: pointer;
+			transition: all .1s ease-in;
+		}
+
+		.post-container:hover {
+			box-shadow: 0 6px 10px -6px #333;
+		}
+
+		.post-child {
+			position: absolute;
+			box-shadow: inset 0 -200px 200px -130px #000;
+			transition: all 0.2s ease-in;
+		}
+
+		.post-container:hover .post-child {
+			transform: scale(1.1);
+		}
+
+		.geh {
+			width: 78px;
+			height: 78px;
+			background-image: url('img/CICT.png');
+			background-size: cover;
+			animation: transitionLogo 8s infinite;
+		}
+
+		@keyframes transitionLogo {
+			0% {
+				background-image: url('img/CICT.png');
+			}
+			100% {
+				background-image: url('img/bsu.png');
+			}
+		}
+
+		.navbar {
+			transition: all .4s;
+		}
+
+		.navbar.hide {
+			transform: translateY(-100%);
+		}
+	</style>
+	<title>CICT Website</title>
+	<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/one.css">
+	<link rel="shortcut icon" type="image/png" href="img/CICT.png">
+
+	<script>
+		$(document).ready(function(){
+			var zero = 0;
+			$(window).on('scroll', function(){
+				$('.navbar').toggleClass('hide', $(window).scrollTop() > zero);
+				zero = $(window).scrollTop();
+			});
+		});
+	</script>
+</head>
+
+<body>
+
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #42464A;">
+		<a class="navbar-brand" href="#">
+			<!-- <img src="img/CICT.png" width="78" height="78" class="d-inline-block align-top"> -->
+			<div class="d-inline-block align-top geh"></div>
+		</a>
+		<p class="titles">College of Information and<br> Communications Technology</p>
+
+		<div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="home.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="grades.html">Grades</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="schedule.html">Schedules</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="event.html">Events</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="calendar.html">Calendar</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about.html">About Us</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="header" style="margin-bottom: 15px; margin-top: 104px;">
+		<p id="headerannouncement1">Latest News</p>
+		<p id="headerannouncement2">Announcements</p>
+	</div>
+
+	<!-- News Modal -->
+	<div class="modal fade news_one" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Accenture's Learning Series and Recruitment</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+
+				<div class="modal-body p-0">
+					<div class="row m-0">
+						<div class="col-md-12 p-0">
+							<img class="img-fluid p-0" src="img/events/Accenture's Learning Series and Recruitment/54730343_2280452512006633_7773602922692083712_n.jpg">
+						</div>
+					</div>
+
+					<div class="row m-0">
+						<div class="col-md-12 p-5">
+							All graduating CICT students are invited to attend Accenture's Learning Series and Recruitment on March 27, Wednesday, at 8AM in the CICT AVR.
+							<br><br>
+							The event will be conducted to provide knowledge and better career opportunities for the graduating CICT students.
+							<br><br>
+							The attendees are required to bring their resume and references, an ID, and their best attire for the Interview.
+							<br><br>
+							Registration starts at 8AM at the CICT AVR.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade news_two" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">BSIT and BLIS first round qualifiers</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+
+				<div class="modal-body p-0">
+					<div class="row m-0">
+						<div class="col-md-12 p-0">
+							<img class="img-fluid p-0" src="img/events/BSIT and BLIS first round qualifiers/1.jpg">
+						</div>
+					</div>
+
+					<div class="row m-0">
+						<div class="col-md-12 p-5">
+								ATTENTION TO ALL BSIT AND BLIS FIRST ROUND QUALIFIERS!
+								<br><br>
+								For BSIT: 
+								Your interview/exam will be tomorrow, 20th of March 2019. We are reminding you to please note the venue and time of your interview. Failure to attend will lead to the forfeiture of your slot.
+								<br><br>
+								For BLIS: 
+								Your schedule is on Friday, 22nd of March 2019 at the CICT Reading Center. First batch is 9:00-11:00 am, next will be 1:00-3:00 pm.
+								<br><br>
+								Please be reminded that all qualifiers should bring:<br>
+								<ul>
+									<li>1pc 2x2 picture</li>
+									<li>Test Permit</li>
+									<li>Photocopy and Original copy of your Grade 11 (1st and 2nd semester grade) and Grade 12 (1st sem grade)</li>
+									<li>Ballpen</li>
+								</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade news_three" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Bulacan State University Debate Society</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+
+				<div class="modal-body p-0">
+					<div class="row m-0">
+						<div class="col-md-12 p-0">
+							<img class="img-fluid p-0" src="img/events/Bulacan State University Debate Society/53271388_2253801091338442_172616041296297984_n.jpg">
+						</div>
+					</div>
+
+					<div class="row m-0">
+						<div class="col-md-12 p-5">
+							[ANNOUNCEMENT]<br><br>
+							This March 30-31, 2019, the Bulacan State University Debate Society will be launching the Bulacan Debate Championship: Revolutionizing Standards at the BulSU Main Campus.
+							<br><br>
+							The competition will adhere to the Asian’s Parliamentary Format, which will pit 2 teams of three in the friendly competition which gives the participants a platform to voice out their opinion regarding the path that our society must take regarding many issues.
+							<br><br>
+							If you have any questions, don’t hesitate to contact the signatories below:
+							Angelica Balatong - President of BSUDS (09552067529)
+							Miguel Bayani - Vice President of BSUDS, Tournament Director (09358759091)
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade news_four" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">BulSU Admission Test takers</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+
+				<div class="modal-body p-0">
+					<div class="row m-0">
+						<div class="col-md-12 p-0 text-center">
+							<img class="img-fluid p-0" src="img/events/BulSU Admission Test takers/53678755_2263914713660413_2442964564602519552_n.jpg">
+						</div>
+					</div>
+
+					<div class="row m-0">
+						<div class="col-md-12 p-5">
+							To all the BulSU Admission Test takers who did not pass, here is the official list of colleges that are still willing to consider and accomodate freshmen students.
+							<br><br>
+							You just have to bring your grade 11 and 12 report cards and get your entrance exam result at the Admission Office near the College of Law and proceed to the Office of the Dean of the college of the particular course you wish to apply.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade news_five" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Commission on Student Elections</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+
+				<div class="modal-body p-0">
+					<div class="row m-0">
+						<div class="col-md-12 p-0">
+							<img class="img-fluid p-0" src="img/events/Commission on Student Elections/50155039_2180451048673447_3143970963238944768_n.jpg">
+						</div>
+					</div>
+
+					<div class="row m-0">
+						<div class="col-md-12 p-5">
+								Have you always wanted to serve the University, but, you don't know how? Wonder no more as the University's Commission on Student Elections (CSE) is looking for a new CICT Commissioner!
+								<br><br>
+								Academic/University Requirements: 
+								Will be enrolling this 2nd Semester, A.Y. 2018-2019; <br>
+								• preferrably non-graduating. <br>
+								• With good academic standing (No Grades of 3.00 below) <br>
+								• If an officer of any duly recognized university organization, the student must tender a leave from his/her organization within the election period. <br>
+								• Definitely not affiliated with any student political groups in the University Character
+								<br><br>
+								Skills Requirements: <br>
+								• Has a character of a good leader <br>
+								• Excellent in analyzing situations <br>
+								• With high moral background <br>
+								• Has a positive character to inspire and lead by example <br>
+								• Has a keen attention to details and can work with minimal instructions<br>
+								• Knows how to take responsibility and has the passion to serve <br>
+								• Creative and innovative in decision making <br>
+								• Communications Skills: excellent both in Filipino/English grammar
+								<br><br>
+								NOTE: The commissioner must have intermediate skills in graphic design.
+								<br><br>
+								Think you got the mettle to be a Commissioner? Then, please contact: CSER Comm. Dianne Jose 0997-687-9271 Head Committee on Secretariat Applications will be accepted until February 1, 2019 only. Submit your applications, mga ka-Cursor!
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Announcement Modal -->
+	<div class="modal fade announce_one" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Cursor Publication Recruitment</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+
+				<div class="modal-body p-0">
+					<div class="row m-0">
+						<div class="col-md-12 p-0 text-center">
+							<img class="img-fluid p-0" src="img/events/Cursor Publication Recruitment/51863706_2216632071722011_2791298403856809984_o.jpg">
+						</div>
+					</div>
+
+					<div class="row m-0">
+						<div class="col-md-12 p-5">
+							Cursor Publication conducted a Recruitment yesterday wherein the aspiring Cursor staff writers, photojournalists, layout artists, cartoonists, and video editors put their talents to the test for a chance to become the publication's newest member.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade announce_two" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Cursor Publication Recruitment Requirements</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+
+				<div class="modal-body p-0">
+					<div class="row m-0">
+						<div class="col-md-12 p-0 text-center">
+							<img class="img-fluid p-0" src="img/events/Cursor Publication Recruitment Requirements/51589914_2212222045496347_97889838048477184_n.jpg">
+						</div>
+					</div>
+
+					<div class="row m-0">
+						<div class="col-md-12 p-5">
+							Good day, Cursor applicants!
+							<br><br>
+							Are you ready to show what you’ve got and become a Cursor member? You better be, as the recruitment day will be at 8AM on February 9, Saturday inside the CICT AVR-A. Here are the things to bring for the applicants:
+							<br><br>
+							Staff Writers: Pen and paper.
+							<br><br>
+							Photojournalists: A DSLR or a smartphone with a good quality camera
+							<br><br>
+							Cartoonists: Art materials. If you prefer using them, you can bring a pentab and a laptop.
+							<br><br>
+							Layout Artists and Video editors: A laptop with editing software.
+							<br><br>
+							For those who have classes on Saturday, excuse letters will be provided.
+							<br><br>
+							If you want to be a Cursor member but still haven’t submitted an application, the deadline for applications is until today. Just look for us at our booth at the 3rd floor of CICT or inside the Student Center at the 4th floor.
+							<br><br>
+							See you there and good luck!
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade announce_three" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Final and Official list of ATBULSU Qualifiers for the Academic Year 2019-2020</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+
+				<div class="modal-body p-0">
+					<div class="row m-0">
+						<div class="col-md-12 p-0 text-center">
+							<img class="img-fluid p-0" src="img/events/Final and Official list of ATBULSU Qualifiers for the Academic Year 2019-2020/56435287_2300474793337738_7600022145841758208_n.jpg">
+						</div>
+					</div>
+
+					<div class="row m-0">
+						<div class="col-md-12 p-5">
+							[ANNOUNCEMENT]
+							<br><br>
+							The final and official list of ATBULSU Qualifiers for the Academic Year 2019-2020 has just been released in the official website of Bulacan State University.
+							<br><br>
+							LINK: https://bulsu.edu.ph/…/final-list-of-atbulsu-2019-2020-list…
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade announce_four" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Free seminars in Video Editing (Premiere Pro)</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+
+				<div class="modal-body p-0">
+					<div class="row m-0">
+						<div class="col-md-12 p-0 text-center">
+							<img class="img-fluid p-0" src="img/events/Free seminars in Video Editing (Premiere Pro)/53064292_2250755704976314_5864638170351534080_n.jpg">
+						</div>
+					</div>
+
+					<div class="row m-0">
+						<div class="col-md-12 p-5">
+							Having trouble designing your projects and editing video documentaries? Be stressed no more. In line with the CICT Week, Cursor Publication is inviting all students to free seminars in Video Editing (Premiere Pro) including basics in Motion Graphics (After Effects) and Sound Design. And for Layout Design basics (Adobe Photoshop) and proper UI Designing.
+							<br><br>
+							The seminars will be tomorrow, March 5, inside the CICT Library with the Layout Design workshop scheduled at 10AM-1PM while the Video Editing workshop will be at 2-5PM. Registration starts 7AM at Student Centre, 4th floor. FIRST COME FIRST SERVED!
+							<br><br>
+							The participants are not required to bring their personal laptops, but, they are encouraged to do so if they have one.
+							<br><br>
+							Excuse letters and Certificates will be provided for all participants
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade announce_five" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">List of candidates for graduation in the course of Associate in Computer Technology (ACT) for the Academic Year 2018-2019</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+
+				<div class="modal-body p-0">
+					<div class="row m-0">
+						<div class="col-md-12 p-0 text-center">
+							<img class="img-fluid p-0" src="img/events/List of candidates for graduation in the course of Associate in Computer Technology (ACT) for the Academic Year 2018-2019/56408492_2300305030021381_1191213594771980288_n.jpg">
+						</div>
+					</div>
+
+					<div class="row m-0">
+						<div class="col-md-12 p-5">
+								List of candidates for graduation in the course of Associate in Computer Technology (ACT) for the Academic Year 2018-2019
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- News Section -->
+	<div class="news">
+
+		<a class="btn p-0 border-0 d-inline" data-toggle="modal" data-target=".news_one">
+			<div class="mb-3 post-container">
+				<div style="background-image: url('img/events/acce.jpg');" class="w-100 h-100 post-child"></div>
+				<div class="h-100" style="padding: 10px;">
+					<div class="row align-items-end h-100">
+						<div class="col-md-12">
+							<p style="color: white;" class="mb-0">March 27, 2019</p>
+							<h4 style="color: white;">Accenture's Learning Series and Recruitment</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</a>
+
+		<a class="btn p-0 border-0 d-inline" data-toggle="modal" data-target=".news_two">
+			<div class="mb-3 post-container">
+				<div style="background-image: url('img/events/BSIT AND BLIS FIRST ROUND QUALIFIERS/1.jpg');" class="w-100 h-100 post-child"></div>
+				<div class="h-100" style="padding: 10px;">
+					<div class="row align-items-end h-100">
+						<div class="col-md-12">
+							<p style="color: white;" class="mb-0">March 19, 2019</p>
+							<h4 style="color: white;">BSIT and BLIS first round qualifiers</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</a>
+
+		<a class="btn p-0 border-0 d-inline" data-toggle="modal" data-target=".news_three">
+			<div class="mb-3 post-container">
+				<div style="background-image: url('img/events/Bulacan State University Debate Society/53271388_2253801091338442_172616041296297984_n.jpg');" class="w-100 h-100 post-child"></div>
+				<div class="h-100" style="padding: 10px;">
+					<div class="row align-items-end h-100">
+						<div class="col-md-12">
+							<p style="color: white;" class="mb-0">March 18, 2019</p>
+							<h4 style="color: white;">Bulacan State University Debate Society</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</a>
+
+		<a class="btn p-0 border-0 d-inline" data-toggle="modal" data-target=".news_four">
+			<div class="mb-3 post-container">
+				<div style="background-image: url('img/events/BulSU Admission Test takers/53678755_2263914713660413_2442964564602519552_n.jpg');" class="w-100 h-100 post-child"></div>
+				<div class="h-100" style="padding: 10px;">
+					<div class="row align-items-end h-100">
+						<div class="col-md-12">
+							<p style="color: white;" class="mb-0">March 15, 2019</p>
+							<h4 style="color: white;">BulSU Admission Test takers</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</a>
+
+		<a class="btn p-0 border-0 d-inline" data-toggle="modal" data-target=".news_five">
+			<div class="mb-3 post-container">
+				<div style="background-image: url('img/events/Commission on Student Elections/50155039_2180451048673447_3143970963238944768_n.jpg');" class="w-100 h-100 post-child"></div>
+				<div class="h-100" style="padding: 10px;">
+					<div class="row align-items-end h-100">
+						<div class="col-md-12">
+							<p style="color: white;" class="mb-0">March 13, 2019</p>
+							<h4 style="color: white;">Commission on Student Elections</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+
+	<!-- Announcement Section -->
+	<div class="announcements">
+
+		<a class="btn p-0 border-0 d-inline" data-toggle="modal" data-target=".announce_one">
+			<div class="mb-3 post-container">
+				<div style="background-image: url('img/events/Cursor Publication Recruitment/51863706_2216632071722011_2791298403856809984_o.jpg'); background-position: center;" class="w-100 h-100 post-child"></div>
+				<div class="h-100" style="padding: 10px;">
+					<div class="row align-items-end h-100">
+						<div class="col-md-12">
+							<p style="color: white;" class="mb-0">March 9, 2019</p>
+							<h4 style="color: white;">Cursor Publication Recruitment</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</a>
+
+		<a class="btn p-0 border-0 d-inline" data-toggle="modal" data-target=".announce_two">
+			<div class="mb-3 post-container">
+				<div style="background-image: url('img/events/Cursor Publication Recruitment Requirements/51589914_2212222045496347_97889838048477184_n.jpg');" class="w-100 h-100 post-child"></div>
+				<div class="h-100" style="padding: 10px;">
+					<div class="row align-items-end h-100">
+						<div class="col-md-12">
+							<p style="color: white;" class="mb-0">March 8, 2019</p>
+							<h4 style="color: white;">Cursor Publication Recruitment Requirements</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</a>
+
+		<a class="btn p-0 border-0 d-inline" data-toggle="modal" data-target=".announce_three">
+			<div class="mb-3 post-container">
+				<div style="background-image: url('img/events/Final and Official list of ATBULSU Qualifiers for the Academic Year 2019-2020/56435287_2300474793337738_7600022145841758208_n.jpg');" class="w-100 h-100 post-child"></div>
+				<div class="h-100" style="padding: 10px;">
+					<div class="row align-items-end h-100">
+						<div class="col-md-12">
+							<p style="color: white;" class="mb-0">March 7, 2019</p>
+							<h4 style="color: white;">Final and Official list of ATBULSU Qualifiers for the Academic Year 2019-2020</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</a>
+
+		<a class="btn p-0 border-0 d-inline" data-toggle="modal" data-target=".announce_four">
+			<div class="mb-3 post-container">
+				<div style="background-image: url('img/events/Free seminars in Video Editing (Premiere Pro)/53064292_2250755704976314_5864638170351534080_n.jpg');" class="w-100 h-100 post-child"></div>
+				<div class="h-100" style="padding: 10px;">
+					<div class="row align-items-end h-100">
+						<div class="col-md-12">
+							<p style="color: white;" class="mb-0">March 6, 2019</p>
+							<h4 style="color: white;">Free seminars in Video Editing (Premiere Pro)</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</a>
+
+		<a class="btn p-0 border-0 d-inline" data-toggle="modal" data-target=".announce_five">
+			<div class="mb-3 post-container">
+				<div style="background-image: url('img/events/List of candidates for graduation in the course of Associate in Computer Technology (ACT) for the Academic Year 2018-2019/56408492_2300305030021381_1191213594771980288_n.jpg');" class="w-100 h-100 post-child"></div>
+				<div class="h-100" style="padding: 10px;">
+					<div class="row align-items-end h-100">
+						<div class="col-md-12">
+							<p style="color: white;" class="mb-0">March 6, 2019</p>
+							<h4 style="color: white;">List of candidates for graduation in the course of Associate in Computer Technology (ACT) for the Academic Year 2018-2019</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</a>
+
+	</div>
+
+	<footer class="w-100 float-left align-bottom mt-5" style="height: 250px; background-color: #42464A; border-top: 5px solid #ea5a5a;">
+		<div class="row m-0">
+			<div class="col-md-6 mt-4 ml-5">
+				<p class="text-white">LINKS</p>
+				<a href="home.html"><p class="text-white m-1">Home</p></a>
+				<a href="grades.html"><p class="text-white m-1">Grades</p></a>
+				<a href="schedule.html"><p class="text-white m-1">Schedules</p></a>
+				<a href="event.html"><p class="text-white m-1">Events</p></a>
+				<a href="calendar.html"><p class="text-white m-1">Calendar</p></a>
+				<a href="about.html"><p class="text-white m-1">About Us</p></a>
+			</div>
+
+			<div class="col-md-5 mt-4">
+				<p class="text-white">CONTACT US</p>
+				<p class="text-white m-1">
+					<img src="img/envelope.svg" class="mr-1" height="32px" width="32px"/>
+					noelbartolome94@gmail.com
+				</p>
+				<p class="text-white m-1">
+					<img src="img/phone-call.svg" class="mr-1" height="32px" width="32px"/>
+					09067102818
+				</p>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

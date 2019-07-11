@@ -1,0 +1,209 @@
+.navigation {
+  list-style: none;
+  margin: 0;   
+  background: #42464A;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.navigation a {
+  text-decoration: none;
+  font-size:38px;
+  display: inline-block;
+  padding-top: 0px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 0px;
+  color: white;
+}
+
+.navigation a:hover {
+  background:grey;
+
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+
+  
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+h3#test{
+	justify-content: flex-start;
+	color: #E3E5E6;
+	padding-top:10px;
+	padding-left:50px;
+	font-size:50px;
+	margin-bottom:0px;
+}
+h3#testt{
+  color: #E3E5E6;
+  font-size:50px;
+  padding-left:360px;
+}
+img{
+	padding-top: 5px;
+	padding-left: 5px;
+}
+div.upperpart{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	padding: 0px;
+	background-color: #42464A;
+	border: 0px solid #E3E5E6;
+}
+div.news{
+	background: #E3E5E6;
+	width:700px;
+	float: left;
+	margin-top:1px;
+	margin-left: 60px;
+}
+div.announcements{
+	background: #E3E5E6;
+	width:700px;
+	margin-top:1px;
+	margin-left: 60px;
+
+}
+div.header{
+	background-color:#E2D0BD;
+	width:309px;
+	margin-top:140px;
+	margin-left:30px;
+	margin-bottom:25px;
+}
+p#titles{
+	padding-bottom:0px;
+}
+
+.pers li{
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+a#a1{
+  color:#1F2638;
+  font-size: 30px;
+  font-style: normal;
+}
+
+div.first{
+  /* margin-top: 65px; */
+  background-color: rgba(227, 229, 230,0.5);
+  width: 100%;
+}
+div.second{
+  background-color: rgba(227, 229, 230,0.5);
+  width: 100%;
+}
+div.third{
+  background-color: rgba(227, 229, 230,0.5);
+  width: 100%;
+}
+div.fourth{
+  background-color: rgba(227, 229, 230,0.5);
+  width: 100%;
+}
+div.secondact{
+  background-color: rgba(227, 229, 230,0.5);
+  width: 100%;
+}
+div.blisfirst{
+  background-color: rgba(227, 229, 230,0.5);
+  width: 100%;
+}
+.popup {
+  display: inline-block;
+  color: #1F2638;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: .9rem;
+  text-decoration: none;
+  padding-right: 15px;
+  font-size:30px;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 374;
+  height: 570;
+  background-color:#1F2638;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: fixed;
+  z-index: 1;
+  bottom: 15%;
+  left: 400px;
+
+}
+
+.popup:hover{
+    color:#1F2638;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: fixed;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+/* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+
+  }
+div.pic{
+  background:url("img/sched.jpg") no-repeat;
+}

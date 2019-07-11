@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+.titl{
+    color: white;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    letter-spacing: .3rem;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Lato' , sans-serif;
+    color: black;
+}
+
+/*---- navigation design -----*/
+.navbar{
+
+    font-weight: 700;
+    background: rgb(rgb(66, 68, 66), green, blue)!important;
+}
+
+.navbar-brand img{
+    height: 4rem;
+}
+
+.navbar-nav li{
+    padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+}
+
+
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+
+    color: orangered;
+}
+/*---- navigation design -----*/
+
+/*---- background -----*/
+.home-inner{
+    background-image: url(img/aaa.jpg);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+/*---- background -----*/
+
+/*---- news content design -----*/
+.caption{
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 30%;
+    z-index: 1;
+    color: black;
+    text-shadow: .1rem .1rem .10rem gray;
+    text-transform: uppercase;
+}
+
+.caption h1{
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .10rem black;
+}
+
+.caption2{
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 60%;
+    z-index: 1;
+    color: black;
+    text-shadow: .1rem .1rem .10rem gray;
+    text-transform: uppercase;
+}
+
+.caption2 h1{
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .10rem black;
+}
+/*---- news contents -----*/
+
+/*---- news content design -----*/
+.read{
+    display: inline-block;
+    width: 80%;
+    height: 130px;
+    border-style: groove;
+    border-bottom-color: black;
+    
+}
+
+.read a{
+    height: 32px;
+}
+
+.read p{
+    text-align: center;
+}
+
+/*---- news content design -----*/
+
+/*---- grades content design -----*/
+.grades-inner{
+    background-color: rebeccapurple;
+}
+
+.gradesset{
+    display: table;
+    width: 100%;
+    height: 100%;
+    height: 200px;
+    margin-left: -10px;
+    padding-top: 70px;
+    text-align: center;
+    background-image: url(img/portal1.jpg);
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+    will-change: transform;
+   
+}
+
+
+.gradesm a{
+    color: black;;
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.gradesm a:hover{
+    color: orangered;
+}
+
+.grades-brand img{
+    height: 5rem;
+}
+
+.btn{
+    margin-top: 40px;
+}
+
+
+/*---- schedule content design -----*/
+
+.schedy{
+    height: 680px;
+    width: 100%;
+    
+}
+
+.heading{
+    padding-top: 90px;
+    font-size: 2.8rem;
+    font-weight: 600;
+    letter-spacing: .3rem;
+    color: white;
+}
+
+.first{
+    height: 430px;
+    width: 300px;
+    padding-left: 0px;
+    background-color: 	rgba(20, 23, 27, 0.842);
+    border-style: groove;
+    
+}
+
+.f{
+    color: white;
+    padding-right: 50px;
+    padding-top: 10px;
+    
+}
+
+.pers li{   
+    display: inline-block;  
+}
+
+
+a#a1{
+    color: white;
+    font-size: .9rem;
+    text-decoration: none;
+    padding-right: 50px;
+    font-weight: bold;
+}
+
+a#a1:hover{
+    color: orangered;
+}
+
+.second{
+    height: 430px;
+    width: 300px;
+    padding-left: 0px;
+    background-color: 	rgba(20, 23, 27, 0.842);
+    border-style: groove;
+}
+
+.third{
+    height: 430px;
+    width: 300px;
+    padding-left: 0px;
+    background-color: 	rgba(20, 23, 27, 0.842);
+    border-style: groove;
+}
+
+.fourth{
+    height: 430px;
+    width: 300px;
+    padding-left: 0px;
+    background-color: 	rgba(20, 23, 27, 0.842);
+    border-style: groove;
+}
+
+
+/*---- event content design -----*/
+.eventy{
+    background-color: rgb(146, 35, 35);
+    height: 670px;
+    width: 100%;
+}
+
+/*---- calendar content design -----*/
+
+.calenda{
+    background-color: rgb(50, 19, 109);
+    width: 100%;
+    height: 670px;
+}
+
+/*---- about content design -----*/
+
+.aboutt{
+    background-color: green;
+    width: 100%;
+    height: 50px;
+}
+
+/* POPUPPPPPPPPP */
+/* Popup container - can be anything you want */
+.popup {
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: .9rem;
+    text-decoration: none;
+    padding-right: 50px;
+    font-weight: bold;
+}
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 374;
+    height: 570;
+    background-color:orangered;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 15%;
+    left: 400px;
+
+  }
+
+  .popup:hover{
+      color: orangered;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+  /* POPUPPPPPPPPP ENDDDDDDDDDDDDD*/

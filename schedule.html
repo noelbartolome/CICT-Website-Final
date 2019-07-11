@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		@font-face {
+			font-family: "sf";
+			src: url(fonts/SF-Movie-Poster.ttf);
+
+		}
+
+		@font-face {
+			font-family: "bench";
+			src: url(fonts/BenchNine-Light.otf);
+		}
+
+		@font-face {
+			font-family: "geo";
+			src: url(fonts/GeosansLight.ttf);
+		}
+
+		h3 {
+			font-family: bench;
+		}
+
+		a {
+			font-family: sf;
+		}
+
+		p#titles {
+			font-family: geo;
+			font-weight: bold;
+			font-size: 22px;
+		}
+
+		p {
+			font-family: geo;
+			font-size: 16px;
+		}
+
+		@font-face {
+			font-family: "Apercu";
+			src: url(fonts/Apercu.ttf);
+		}
+
+		.c-sched h3, .c-sched h4 {
+			font-family: Apercu;
+		}
+
+		.c-sched a {
+			font-family: Apercu;
+		}
+
+		.c-sched #titles {
+			font-family: Apercu;
+			font-weight: bold;
+			font-size: 22px;
+		}
+
+		.c-sched p {
+			font-family: Apercu;
+			font-size: 16px;
+		}
+
+		.navbar {
+			transition: all .4s;
+		}
+
+		.navbar.hide {
+			transform: translateY(-100%);
+		}
+	</style>
+	<title>CICT Website</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/schedule.css">
+	<link rel="shortcut icon" type="image/png" href="img/CICT.png">
+	<script src="js/sched.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/one.css">
+	<script>
+		$(document).ready(function(){
+			var zero = 0;
+			$(window).on('scroll', function(){
+				$('.navbar').toggleClass('hide', $(window).scrollTop() > zero);
+				zero = $(window).scrollTop();
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark " style="background-color: #42464A;">
+		<a class="navbar-brand " href="#">
+			<img src="img/CICT.png" width="78" height="78" class="d-inline-block align-top">
+		</a>
+		<p class="titles2 ">College of Information and<br> Communications Technology</p>
+
+		<div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto c-sched">
+				<li class="nav-item">
+					<a class="nav-link" href="home.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="grades.html">Grades</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="schedule.html">Schedules</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="event.html">Events</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="calendar.html">Calendar</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about.html">About Us</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div style="background-image: url(img/2.jpg);width: 100%;height: 895px; margin-top: 104px;" id="pic">
+		<div class="first">
+			<p id="titles">BSIT FIRST YEAR</p>
+			<ul class="pers">
+				<li><a>
+						<div class="popup" onclick="myFunction('BSIT1AG1')">1A-G1
+							<span class="popuptext" id="BSIT1AG1"><img src="img/schedule/BSIT1AG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1AG2')">1A-G2
+							<span class="popuptext" id="BSIT1AG2"><img src="img/schedule/BSIT1AG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1BG1')">1B-G1
+							<span class="popuptext" id="BSIT1BG1"><img src="img/schedule/BSIT1BG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1BG2')">1B-G2
+							<span class="popuptext" id="BSIT1BG2"><img src="img/schedule/BSIT1BG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1CG1')">1C-G1
+							<span class="popuptext" id="BSIT1CG1"><img src="img/schedule/BSIT 1CG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1CG2')">1C-G2
+							<span class="popuptext" id="BSIT1CG2"><img src="img/schedule/BSIT 1CG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1DG1')">1D-G1
+							<span class="popuptext" id="BSIT1DG1"><img src="img/schedule/BSIT 1DG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1DG2')">1D-G2
+							<span class="popuptext" id="BSIT1DG2"><img src="img/schedule/BSIT 1DG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1EG1')">1E-G1
+							<span class="popuptext" id="BSIT1EG1"><img src="img/schedule/BSIT 1EG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1EG2')">1E-G2
+							<span class="popuptext" id="BSIT1EG2"><img src="img/schedule/BSIT 1EG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1FG1')">1F-G1
+							<span class="popuptext" id="BSIT1FG1"><img src="img/schedule/BSIT 1FG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1FG2')">1F-G2
+							<span class="popuptext" id="BSIT1FG2"><img src="img/schedule/BSIT 1FG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1GG1')">1G-G1
+							<span class="popuptext" id="BSIT1GG1"><img src="img/schedule/BSIT 1GG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1GG2')">1G-G2
+							<span class="popuptext" id="BSIT1GG2"><img src="img/schedule/BSIT 1GG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1HG1')">1H-G1
+							<span class="popuptext" id="BSIT1HG1"><img src="img/schedule/BSIT 1HG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1HG2')">1H-G2
+							<span class="popuptext" id="BSIT1HG2"><img src="img/schedule/BSIT 1HG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1IG1')">1I-G1
+							<span class="popuptext" id="BSIT1IG1"><img src="img/schedule/BSIT 1IG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1IG2')">1I-G2
+							<span class="popuptext" id="BSIT1IG2"><img src="img/schedule/BSIT 1IG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1JG1')">1J-G1
+							<span class="popuptext" id="BSIT1JG1"><img src="img/schedule/BSIT 1JG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1JG2')">1J-G2
+							<span class="popuptext" id="BSIT1JG2"><img src="img/schedule/BSIT 1JG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1KG1')">1K-G1
+							<span class="popuptext" id="BSIT1KG1"><img src="img/schedule/BSIT 1KG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1KG2')">1K-G2
+							<span class="popuptext" id="BSIT1KG2"><img src="img/schedule/BSIT 1KG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1LG1')">1L-G1
+							<span class="popuptext" id="BSIT1LG1"><img src="img/schedule/BSIT 1LG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1LG2')">1L-G2
+							<span class="popuptext" id="BSIT1LG2"><img src="img/schedule/BSIT 1LG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1MG1')">1M-G1
+							<span class="popuptext" id="BSIT1MG1"><img src="img/schedule/BSIT 1MG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1MG2')">1M-G2
+							<span class="popuptext" id="BSIT1MG2"><img src="img/schedule/BSIT 1MG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1NG1')">1N-G1
+							<span class="popuptext" id="BSIT1NG1"><img src="img/schedule/BSIT 1NG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1NG2')">1N-G2
+							<span class="popuptext" id="BSIT1NG2"><img src="img/schedule/BSIT 1NG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1OG1')">1O-G1
+							<span class="popuptext" id="BSIT1OG1"><img src="img/schedule/BSIT 1OG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1OG2')">1O-G2
+							<span class="popuptext" id="BSIT1OG2"><img src="img/schedule/BSIT 1OG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1PG1')">1P-G1
+							<span class="popuptext" id="BSIT1PG1"><img src="img/schedule/BSIT 1PG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1PG2')">1P-G2
+							<span class="popuptext" id="BSIT1PG2"><img src="img/schedule/BSIT 1PG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1QG1')">1Q-G1
+							<span class="popuptext" id="BSIT1QG1"><img src="img/schedule/BSIT 1QG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1QG2')">1Q-G2
+							<span class="popuptext" id="BSIT1QG2"><img src="img/schedule/BSIT 1QG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1RG1')">1R-G1
+							<span class="popuptext" id="BSIT1RG1"><img src="img/schedule/BSIT 1RG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1RG2')">1R-G2
+							<span class="popuptext" id="BSIT1RG2"><img src="img/schedule/BSIT 1RG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1SG1')">1S-G1
+							<span class="popuptext" id="BSIT1SG1"><img src="img/schedule/BSIT 1SG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1SG2')">1S-G2
+							<span class="popuptext" id="BSIT1SG2"><img src="img/schedule/BSIT 1SG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1TG1')">1T-G1
+							<span class="popuptext" id="BSIT1TG1"><img src="img/schedule/BSIT 1TG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1TG2')">1T-G2
+							<span class="popuptext" id="BSIT1TG2"><img src="img/schedule/BSIT 1TG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1UG1')">U1-G1
+							<span class="popuptext" id="BSIT1UG1"><img src="img/schedule/BSIT 1UG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1UG2')">1U-G2
+							<span class="popuptext" id="BSIT1UG2"><img src="img/schedule/BSIT 1UG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1VG1')">1V-G1
+							<span class="popuptext" id="BSIT1VG1"><img src="img/schedule/BSIT 1VG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1VG2')">1V-G2
+							<span class="popuptext" id="BSIT1VG2"><img src="img/schedule/BSIT 1VG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1WG1')">1W-G1
+							<span class="popuptext" id="BSIT1WG1"><img src="img/schedule/BSIT 1WG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1WG2')">1W-G2
+							<span class="popuptext" id="BSIT1WG2"><img src="img/schedule/BSIT 1WG2.JPG"></span>
+						</div>
+					</a></li>
+			</ul>
+		</div>
+		<div class="second">
+			<p id="titles">BSIT SECOND YEAR</p>
+			<ul class="pers">
+				<li><a>
+						<div class="popup" onclick="myFunction('BSIT1AG1')">2A-G1
+							<span class="popuptext" id="BSIT1AG1"><img src="img/schedule/BSIT1AG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1AG2')">2A-G2
+							<span class="popuptext" id="BSIT1AG2"><img src="img/schedule/BSIT1AG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1BG1')">2B-G1
+							<span class="popuptext" id="BSIT1BG1"><img src="img/schedule/BSIT1BG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1BG2')">2B-G2
+							<span class="popuptext" id="BSIT1BG2"><img src="img/schedule/BSIT1BG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1CG1')">2C-G1
+							<span class="popuptext" id="BSIT1CG1"><img src="img/schedule/BSIT 1CG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1CG2')">2C-G2
+							<span class="popuptext" id="BSIT1CG2"><img src="img/schedule/BSIT 1CG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1DG1')">2D-G1
+							<span class="popuptext" id="BSIT1DG1"><img src="img/schedule/BSIT 1DG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1DG2')">2D-G2
+							<span class="popuptext" id="BSIT1DG2"><img src="img/schedule/BSIT 1DG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1EG1')">2E-G1
+							<span class="popuptext" id="BSIT1EG1"><img src="img/schedule/BSIT 1EG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1EG2')">2E-G2
+							<span class="popuptext" id="BSIT1EG2"><img src="img/schedule/BSIT 1EG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1FG1')">2F-G1
+							<span class="popuptext" id="BSIT1FG1"><img src="img/schedule/BSIT 1FG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1FG2')">2F-G2
+							<span class="popuptext" id="BSIT1FG2"><img src="img/schedule/BSIT 1FG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1GG1')">2G-G1
+							<span class="popuptext" id="BSIT1GG1"><img src="img/schedule/BSIT 1GG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1GG2')">2G-G2
+							<span class="popuptext" id="BSIT1GG2"><img src="img/schedule/BSIT 1GG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1HG1')">2H-G1
+							<span class="popuptext" id="BSIT1HG1"><img src="img/schedule/BSIT 1HG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1HG2')">2H-G2
+							<span class="popuptext" id="BSIT1HG2"><img src="img/schedule/BSIT 1HG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1IG1')">2I-G1
+							<span class="popuptext" id="BSIT1IG1"><img src="img/schedule/BSIT 1IG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1IG2')">2I-G2
+							<span class="popuptext" id="BSIT1IG2"><img src="img/schedule/BSIT 1IG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1JG1')">2J-G1
+							<span class="popuptext" id="BSIT1JG1"><img src="img/schedule/BSIT 1JG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1JG2')">2J-G2
+							<span class="popuptext" id="BSIT1JG2"><img src="img/schedule/BSIT 1JG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1KG1')">2K-G1
+							<span class="popuptext" id="BSIT1KG1"><img src="img/schedule/BSIT 1KG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1KG2')">2K-G2
+							<span class="popuptext" id="BSIT1KG2"><img src="img/schedule/BSIT 1KG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1LG1')">2L-G1
+							<span class="popuptext" id="BSIT1LG1"><img src="img/schedule/BSIT 1LG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1LG2')">2L-G2
+							<span class="popuptext" id="BSIT1LG2"><img src="img/schedule/BSIT 1LG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1MG1')">2M-G1
+							<span class="popuptext" id="BSIT1MG1"><img src="img/schedule/BSIT 1MG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1MG2')">2M-G2
+							<span class="popuptext" id="BSIT1MG2"><img src="img/schedule/BSIT 1MG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1NG1')">2N-G1
+							<span class="popuptext" id="BSIT1NG1"><img src="img/schedule/BSIT 1NG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1NG2')">2N-G2
+							<span class="popuptext" id="BSIT1NG2"><img src="img/schedule/BSIT 1NG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1OG1')">2O-G1
+							<span class="popuptext" id="BSIT1OG1"><img src="img/schedule/BSIT 1OG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1OG2')">2O-G2
+							<span class="popuptext" id="BSIT1OG2"><img src="img/schedule/BSIT 1OG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1PG1')">2P-G1
+							<span class="popuptext" id="BSIT1PG1"><img src="img/schedule/BSIT 1PG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1PG2')">2P-G2
+							<span class="popuptext" id="BSIT1PG2"><img src="img/schedule/BSIT 1PG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1QG1')">2Q-G1
+							<span class="popuptext" id="BSIT1QG1"><img src="img/schedule/BSIT 1QG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1QG2')">2Q-G2
+							<span class="popuptext" id="BSIT1QG2"><img src="img/schedule/BSIT 1QG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1RG1')">2R-G1
+							<span class="popuptext" id="BSIT1RG1"><img src="img/schedule/BSIT 1RG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1RG2')">2R-G2
+							<span class="popuptext" id="BSIT1RG2"><img src="img/schedule/BSIT 1RG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1SG1')">2S-G1
+							<span class="popuptext" id="BSIT1SG1"><img src="img/schedule/BSIT 1SG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1SG2')">2S-G2
+							<span class="popuptext" id="BSIT1SG2"><img src="img/schedule/BSIT 1SG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1TG1')">2T-G1
+							<span class="popuptext" id="BSIT1TG1"><img src="img/schedule/BSIT 1TG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1TG2')">2T-G2
+							<span class="popuptext" id="BSIT1TG2"><img src="img/schedule/BSIT 1TG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1UG1')">21-G1
+							<span class="popuptext" id="BSIT1UG1"><img src="img/schedule/BSIT 1UG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1UG2')">2U-G2
+							<span class="popuptext" id="BSIT1UG2"><img src="img/schedule/BSIT 1UG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1VG1')">2V-G1
+							<span class="popuptext" id="BSIT1VG1"><img src="img/schedule/BSIT 1VG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1VG2')">2V-G2
+							<span class="popuptext" id="BSIT1VG2"><img src="img/schedule/BSIT 1VG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1WG1')">2W-G1
+							<span class="popuptext" id="BSIT1WG1"><img src="img/schedule/BSIT 1WG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1WG2')">2W-G2
+							<span class="popuptext" id="BSIT1WG2"><img src="img/schedule/BSIT 1WG2.JPG"></span>
+						</div>
+					</a></li>
+			</ul>
+		</div>
+		<div class="third">
+			<p id="titles">BSIT THIRD YEAR</p>
+			<ul class="pers">
+				<li><a>
+						<div class="popup" onclick="myFunction('BSIT3AG1')">3A-G1
+							<span class="popuptext" id="BSIT3AG1"><img src="img/schedule/BSIT 3AG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3AG2')">3A-G2
+							<span class="popuptext" id="BSIT3AG2"><img src="img/schedule/BSIT 3AG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3BG1')">3B-G1
+							<span class="popuptext" id="BSIT3BG1"><img src="img/schedule/BSIT 3BG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3BG2')">3B-G2
+							<span class="popuptext" id="BSIT3BG2"><img src="img/schedule/BSIT 3BG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3CG1')">3C-G1
+							<span class="popuptext" id="BSIT3CG1"><img src="img/schedule/BSIT 3CG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3CG2')">3C-G2
+							<span class="popuptext" id="BSIT3CG2"><img src="img/schedule/BSIT 3CG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3DG1')">3D-G1
+							<span class="popuptext" id="BSIT3DG1"><img src="img/schedule/BSIT 3DG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3DG2')">3D-G2
+							<span class="popuptext" id="BSIT3DG2"><img src="img/schedule/BSIT 3DG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3EG1')">3E-G1
+							<span class="popuptext" id="BSIT3EG1"><img src="img/schedule/BSIT 1EG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3EG2')">3E-G2
+							<span class="popuptext" id="BSIT3EG2"><img src="img/schedule/BSIT 1EG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3FG1')">3F-G1
+							<span class="popuptext" id="BSIT3FG1"><img src="img/schedule/BSIT 1FG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3FG2')">3F-G2
+							<span class="popuptext" id="BSIT3FG2"><img src="img/schedule/BSIT 1FG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3GG1')">3G-G1
+							<span class="popuptext" id="BSIT3GG1"><img src="img/schedule/BSIT 1GG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3GG2')">3G-G2
+							<span class="popuptext" id="BSIT3GG2"><img src="img/schedule/BSIT 1GG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3HG1')">3H-G1
+							<span class="popuptext" id="BSIT3HG1"><img src="img/schedule/BSIT 1HG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3HG2')">3H-G2
+							<span class="popuptext" id="BSIT3HG2"><img src="img/schedule/BSIT 1HG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3IG1')">3I-G1
+							<span class="popuptext" id="BSIT3IG1"><img src="img/schedule/BSIT 1IG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3IG2')">3I-G2
+							<span class="popuptext" id="BSIT3IG2"><img src="img/schedule/BSIT 1IG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3JG1')">3J-G1
+							<span class="popuptext" id="BSIT3JG1"><img src="img/schedule/BSIT 1JG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3JG2')">3J-G2
+							<span class="popuptext" id="BSIT3JG2"><img src="img/schedule/BSIT 1JG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3KG1')">3K-G1
+							<span class="popuptext" id="BSIT3KG1"><img src="img/schedule/BSIT 1KG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3KG2')">3K-G2
+							<span class="popuptext" id="BSIT3KG2"><img src="img/schedule/BSIT 1KG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3LG1')">3L-G1
+							<span class="popuptext" id="BSIT3LG1"><img src="img/schedule/BSIT 1LG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3LG2')">3L-G2
+							<span class="popuptext" id="BSIT3LG2"><img src="img/schedule/BSIT 1LG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3MG1')">3M-G1
+							<span class="popuptext" id="BSIT3MG1"><img src="img/schedule/BSIT 1MG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3MG2')">3M-G2
+							<span class="popuptext" id="BSIT3MG2"><img src="img/schedule/BSIT 1MG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3NG1')">3N-G1
+							<span class="popuptext" id="BSIT3NG1"><img src="img/schedule/BSIT 1NG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3NG2')">3N-G2
+							<span class="popuptext" id="BSIT3NG2"><img src="img/schedule/BSIT 1NG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3OG1')">3O-G1
+							<span class="popuptext" id="BSIT3OG1"><img src="img/schedule/BSIT 1OG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3OG2')">3O-G2
+							<span class="popuptext" id="BSIT3OG2"><img src="img/schedule/BSIT 1OG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3PG1')">3P-G1
+							<span class="popuptext" id="BSIT3PG1"><img src="img/schedule/BSIT 1PG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3PG2')">3P-G2
+							<span class="popuptext" id="BSIT3PG2"><img src="img/schedule/BSIT 1PG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3QG1')">3Q-G1
+							<span class="popuptext" id="BSIT3QG1"><img src="img/schedule/BSIT 1QG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3QG2')">3Q-G2
+							<span class="popuptext" id="BSIT3QG2"><img src="img/schedule/BSIT 1QG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3RG1')">3R-G1
+							<span class="popuptext" id="BSIT3RG1"><img src="img/schedule/BSIT 1RG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3RG2')">3R-G2
+							<span class="popuptext" id="BSIT3RG2"><img src="img/schedule/BSIT 1RG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3SG1')">3S-G1
+							<span class="popuptext" id="BSIT3SG1"><img src="img/schedule/BSIT 1SG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3SG2')">3S-G2
+							<span class="popuptext" id="BSIT3SG2"><img src="img/schedule/BSIT 1SG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3TG1')">3T-G1
+							<span class="popuptext" id="BSIT3TG1"><img src="img/schedule/BSIT 1TG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3TG2')">3T-G2
+							<span class="popuptext" id="BSIT3TG2"><img src="img/schedule/BSIT 1TG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3UG1')">31-G1
+							<span class="popuptext" id="BSIT3UG1"><img src="img/schedule/BSIT 1UG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3UG2')">3U-G2
+							<span class="popuptext" id="BSIT3UG2"><img src="img/schedule/BSIT 1UG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3VG1')">3V-G1
+							<span class="popuptext" id="BSIT3VG1"><img src="img/schedule/BSIT 1VG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3VG2')">3V-G2
+							<span class="popuptext" id="BSIT3VG2"><img src="img/schedule/BSIT 1VG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3WG1')">3W-G1
+							<span class="popuptext" id="BSIT3WG1"><img src="img/schedule/BSIT 1WG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT3WG2')">3W-G2
+							<span class="popuptext" id="BSIT3WG2"><img src="img/schedule/BSIT 1WG2.JPG"></span>
+						</div>
+					</a></li>
+			</ul>
+		</div>
+		<div class="fourth">
+			<p id="titles">BSIT FOURTH YEAR</p>
+			<ul class="pers">
+				<li><a>
+						<div class="popup" onclick="myFunction('BSIT1AG1')">4A-G1
+							<span class="popuptext" id="BSIT1AG1"><img src="img/schedule/BSIT1AG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1AG2')">4A-G2
+							<span class="popuptext" id="BSIT1AG2"><img src="img/schedule/BSIT1AG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1BG1')">4B-G1
+							<span class="popuptext" id="BSIT1BG1"><img src="img/schedule/BSIT1BG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1BG2')">4B-G2
+							<span class="popuptext" id="BSIT1BG2"><img src="img/schedule/BSIT1BG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1CG1')">4C-G1
+							<span class="popuptext" id="BSIT1CG1"><img src="img/schedule/BSIT 1CG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1CG2')">4C-G2
+							<span class="popuptext" id="BSIT1CG2"><img src="img/schedule/BSIT 1CG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1DG1')">4D-G1
+							<span class="popuptext" id="BSIT1DG1"><img src="img/schedule/BSIT 1DG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1DG2')">4D-G2
+							<span class="popuptext" id="BSIT1DG2"><img src="img/schedule/BSIT 1DG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1EG1')">4E-G1
+							<span class="popuptext" id="BSIT1EG1"><img src="img/schedule/BSIT 1EG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1EG2')">4E-G2
+							<span class="popuptext" id="BSIT1EG2"><img src="img/schedule/BSIT 1EG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1FG1')">4F-G1
+							<span class="popuptext" id="BSIT1FG1"><img src="img/schedule/BSIT 1FG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1FG2')">4F-G2
+							<span class="popuptext" id="BSIT1FG2"><img src="img/schedule/BSIT 1FG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1GG1')">4G-G1
+							<span class="popuptext" id="BSIT1GG1"><img src="img/schedule/BSIT 1GG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1GG2')">4G-G2
+							<span class="popuptext" id="BSIT1GG2"><img src="img/schedule/BSIT 1GG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1HG1')">4H-G1
+							<span class="popuptext" id="BSIT1HG1"><img src="img/schedule/BSIT 1HG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1HG2')">4H-G2
+							<span class="popuptext" id="BSIT1HG2"><img src="img/schedule/BSIT 1HG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1IG1')">4I-G1
+							<span class="popuptext" id="BSIT1IG1"><img src="img/schedule/BSIT 1IG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1IG2')">4I-G2
+							<span class="popuptext" id="BSIT1IG2"><img src="img/schedule/BSIT 1IG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1JG1')">4J-G1
+							<span class="popuptext" id="BSIT1JG1"><img src="img/schedule/BSIT 1JG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1JG2')">4J-G2
+							<span class="popuptext" id="BSIT1JG2"><img src="img/schedule/BSIT 1JG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1KG1')">4K-G1
+							<span class="popuptext" id="BSIT1KG1"><img src="img/schedule/BSIT 1KG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1KG2')">4K-G2
+							<span class="popuptext" id="BSIT1KG2"><img src="img/schedule/BSIT 1KG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1LG1')">4L-G1
+							<span class="popuptext" id="BSIT1LG1"><img src="img/schedule/BSIT 1LG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1LG2')">4L-G2
+							<span class="popuptext" id="BSIT1LG2"><img src="img/schedule/BSIT 1LG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1MG1')">4M-G1
+							<span class="popuptext" id="BSIT1MG1"><img src="img/schedule/BSIT 1MG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1MG2')">4M-G2
+							<span class="popuptext" id="BSIT1MG2"><img src="img/schedule/BSIT 1MG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1NG1')">4N-G1
+							<span class="popuptext" id="BSIT1NG1"><img src="img/schedule/BSIT 1NG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1NG2')">4N-G2
+							<span class="popuptext" id="BSIT1NG2"><img src="img/schedule/BSIT 1NG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1OG1')">4O-G1
+							<span class="popuptext" id="BSIT1OG1"><img src="img/schedule/BSIT 1OG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1OG2')">4O-G2
+							<span class="popuptext" id="BSIT1OG2"><img src="img/schedule/BSIT 1OG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1PG1')">4P-G1
+							<span class="popuptext" id="BSIT1PG1"><img src="img/schedule/BSIT 1PG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1PG2')">4P-G2
+							<span class="popuptext" id="BSIT1PG2"><img src="img/schedule/BSIT 1PG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1QG1')">4Q-G1
+							<span class="popuptext" id="BSIT1QG1"><img src="img/schedule/BSIT 1QG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1QG2')">4Q-G2
+							<span class="popuptext" id="BSIT1QG2"><img src="img/schedule/BSIT 1QG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1RG1')">4R-G1
+							<span class="popuptext" id="BSIT1RG1"><img src="img/schedule/BSIT 1RG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1RG2')">4R-G2
+							<span class="popuptext" id="BSIT1RG2"><img src="img/schedule/BSIT 1RG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1SG1')">4S-G1
+							<span class="popuptext" id="BSIT1SG1"><img src="img/schedule/BSIT 1SG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1SG2')">4S-G2
+							<span class="popuptext" id="BSIT1SG2"><img src="img/schedule/BSIT 1SG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1TG1')">4T-G1
+							<span class="popuptext" id="BSIT1TG1"><img src="img/schedule/BSIT 1TG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1TG2')">4T-G2
+							<span class="popuptext" id="BSIT1TG2"><img src="img/schedule/BSIT 1TG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1UG1')">41-G1
+							<span class="popuptext" id="BSIT1UG1"><img src="img/schedule/BSIT 1UG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1UG2')">4U-G2
+							<span class="popuptext" id="BSIT1UG2"><img src="img/schedule/BSIT 1UG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1VG1')">4V-G1
+							<span class="popuptext" id="BSIT1VG1"><img src="img/schedule/BSIT 1VG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1VG2')">4V-G2
+							<span class="popuptext" id="BSIT1VG2"><img src="img/schedule/BSIT 1VG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1WG1')">4W-G1
+							<span class="popuptext" id="BSIT1WG1"><img src="img/schedule/BSIT 1WG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BSIT1WG2')">4W-G2
+							<span class="popuptext" id="BSIT1WG2"><img src="img/schedule/BSIT 1WG2.JPG"></span>
+						</div>
+					</a></li>
+			</ul>
+		</div>
+		<div class="secondact">
+			<p id="titles">ACT SECOND YEAR</p>
+			<ul class="pers">
+				<li><a>
+						<div class="popup" onclick="myFunction('ACT2AG1')">2A-G1
+							<span class="popuptext" id="ACT2AG1"><img src="img/schedule/ACT 2AG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2AG2')">2A-G2
+							<span class="popuptext" id="ACT2AG2"><img src="img/schedule/ACT 2AG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2BG1')">2B-G1
+							<span class="popuptext" id="ACT2BG1"><img src="img/schedule/ACT 2BG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2BG2')">2B-G2
+							<span class="popuptext" id="ACT2BG2"><img src="img/schedule/ACT 2BG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2CG1')">2C-G1
+							<span class="popuptext" id="ACT2CG1"><img src="img/schedule/ACT 2CG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2CG2')">2C-G2
+							<span class="popuptext" id="ACT2CG2"><img src="img/schedule/ACT 2CG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2DG1')">2D-G1
+							<span class="popuptext" id="ACT2DG1"><img src="img/schedule/ACT 2DG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2DG2')">2D-G2
+							<span class="popuptext" id="ACT2DG2"><img src="img/schedule/ACT 2DG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2EG1')">2E-G1
+							<span class="popuptext" id="ACT2EG1"><img src="img/schedule/ACT 2EG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2EG2')">2E-G2
+							<span class="popuptext" id="ACT2EG2"><img src="img/schedule/ACT 2EG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2FG1')">2F-G1
+							<span class="popuptext" id="ACT2FG1"><img src="img/schedule/ACT 2FG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2FG2')">2F-G2
+							<span class="popuptext" id="ACT2FG2"><img src="img/schedule/ACT 2FG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2AG1')">2G-G1
+							<span class="popuptext" id="ACT2AG1"><img src="img/schedule/ACT 2AG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2AG2')">2G-G2
+							<span class="popuptext" id="ACT2AG2"><img src="img/schedule/ACT 2AG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2BG1')">2H-G1
+							<span class="popuptext" id="ACT2BG1"><img src="img/schedule/ACT 2BG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2BG2')">2H-G2
+							<span class="popuptext" id="ACT2BG2"><img src="img/schedule/ACT 2BG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2CG1')">2I-G1
+							<span class="popuptext" id="ACT2CG1"><img src="img/schedule/ACT 2CG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2CG2')">2I-G2
+							<span class="popuptext" id="ACT2CG2"><img src="img/schedule/ACT 2CG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2DG1')">2J-G1
+							<span class="popuptext" id="ACT2DG1"><img src="img/schedule/ACT 2DG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2DG2')">2J-G2
+							<span class="popuptext" id="ACT2DG2"><img src="img/schedule/ACT 2DG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2EG1')">2K-G1
+							<span class="popuptext" id="ACT2EG1"><img src="img/schedule/ACT 2EG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2EG2')">2K-G2
+							<span class="popuptext" id="ACT2EG2"><img src="img/schedule/ACT 2EG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2FG1')">2L-G1
+							<span class="popuptext" id="ACT2FG1"><img src="img/schedule/ACT 2FG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2FG2')">2L-G2
+							<span class="popuptext" id="ACT2FG2"><img src="img/schedule/ACT 2FG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2AG1')">2M-G1
+							<span class="popuptext" id="ACT2AG1"><img src="img/schedule/ACT 2AG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2AG2')">2M-G2
+							<span class="popuptext" id="ACT2AG2"><img src="img/schedule/ACT 2AG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2BG1')">2N-G1
+							<span class="popuptext" id="ACT2BG1"><img src="img/schedule/ACT 2BG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2BG2')">2N-G2
+							<span class="popuptext" id="ACT2BG2"><img src="img/schedule/ACT 2BG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2CG1')">2O-G1
+							<span class="popuptext" id="ACT2CG1"><img src="img/schedule/ACT 2CG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2CG2')">2O-G2
+							<span class="popuptext" id="ACT2CG2"><img src="img/schedule/ACT 2CG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2DG1')">2P-G1
+							<span class="popuptext" id="ACT2DG1"><img src="img/schedule/ACT 2DG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2DG2')">2P-G2
+							<span class="popuptext" id="ACT2DG2"><img src="img/schedule/ACT 2DG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2EG1')">2Q-G1
+							<span class="popuptext" id="ACT2EG1"><img src="img/schedule/ACT 2EG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2EG2')">2Q-G2
+							<span class="popuptext" id="ACT2EG2"><img src="img/schedule/ACT 2EG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2FG1')">2R-G1
+							<span class="popuptext" id="ACT2FG1"><img src="img/schedule/ACT 2FG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2FG2')">2R-G2
+							<span class="popuptext" id="ACT2FG2"><img src="img/schedule/ACT 2FG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2AG1')">2S-G1
+							<span class="popuptext" id="ACT2AG1"><img src="img/schedule/ACT 2AG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2AG2')">2S-G2
+							<span class="popuptext" id="ACT2AG2"><img src="img/schedule/ACT 2AG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2BG1')">2T-G1
+							<span class="popuptext" id="ACT2BG1"><img src="img/schedule/ACT 2BG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2BG2')">2T-G2
+							<span class="popuptext" id="ACT2BG2"><img src="img/schedule/ACT 2BG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2CG1')">2U-G1
+							<span class="popuptext" id="ACT2CG1"><img src="img/schedule/ACT 2CG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2CG2')">2U-G2
+							<span class="popuptext" id="ACT2CG2"><img src="img/schedule/ACT 2CG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2DG1')">2V-G1
+							<span class="popuptext" id="ACT2DG1"><img src="img/schedule/ACT 2DG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2DG2')">2V-G2
+							<span class="popuptext" id="ACT2DG2"><img src="img/schedule/ACT 2DG2.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2EG1')">2W-G1
+							<span class="popuptext" id="ACT2EG1"><img src="img/schedule/ACT 2EG1.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('ACT2EG2')">2W-G2
+							<span class="popuptext" id="ACT2EG2"><img src="img/schedule/ACT 2EG2.JPG"></span>
+						</div>
+					</a></li>
+			</ul>
+		</div>
+		<div class="blisfirst">
+			<p id="titles">BLIS FIRST YEAR</p>
+			<ul class="pers">
+				<li><a>
+						<div class="popup" onclick="myFunction('BLIS1A')">BLIS 1A
+							<span class="popuptext" id="BLIS1A"><img src="img/schedule/BLIS 1A.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BLIS1B')">BLIS 1B
+							<span class="popuptext" id="BLIS1B"><img src="img/schedule/BLIS 1B.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BLIS1C')">BLIS 1C
+							<span class="popuptext" id="BLIS1C"><img src="img/schedule/BLIS 1C.JPG"></span>
+						</div>
+						<div class="popup" onclick="myFunction('BLIS1D')">BLIS 1D
+							<span class="popuptext" id="BLIS1D"><img src="img/schedule/BLIS 1D.JPG"></span>
+						</div>
+					</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<footer class="w-100 float-left align-bottom"
+		style="height: 250px; background-color: #42464A; border-top: 5px solid #ea5a5a;">
+		<div class="row m-0">
+			<div class="col-md-6 mt-4 ml-5">
+				<h3 class="text-white">LINKS</h3>
+				<a href="home.html">
+					<p class="text-white m-1">Home</p>
+				</a>
+				<a href="grades.html">
+					<p class="text-white m-1">Grades</p>
+				</a>
+				<a href="schedule.html">
+					<p class="text-white m-1">Schedules</p>
+				</a>
+				<a href="event.html">
+					<p class="text-white m-1">Events</p>
+				</a>
+				<a href="calendar.html">
+					<p class="text-white m-1">Calendar</p>
+				</a>
+				<a href="about.html">
+					<p class="text-white m-1">About Us</p>
+				</a>
+			</div>
+
+			<div class="col-md-5 mt-4">
+				<h3 class="text-white">CONTACT US</h3>
+				<p class="text-white m-1">
+					<img src="img/envelope.svg" class="mr-1" height="32px" width="32px" />
+					noelbartolome94@gmail.com
+				</p>
+				<p class="text-white m-1">
+					<img src="img/phone-call.svg" class="mr-1" height="32px" width="32px" />
+					09067102818
+				</p>
+			</div>
+		</div>
+	</footer>
+	<!---- Java Script -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="bootstrap-4.1.3-dist/css/bootstrap.min.css"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+		integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+		integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+		crossorigin="anonymous"></script>
+
+	<!--END js-->
+	<script>
+		// When the user clicks on div, open the popup
+		function myFunction(section) {
+			var popup = document.getElementById(section);
+			popup.classList.toggle("show");
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			@font-face {
+			font-family: "Apercu";
+			src: url(fonts/Apercu.ttf);
+		}
+
+		h3, h4 {
+			font-family: Apercu;
+		}
+
+		a {
+			font-family: Apercu;
+		}
+
+		p#titles {
+			font-family: Apercu;
+			font-weight: bold;
+			font-size: 22px;
+		}
+
+		p {
+			font-family: Apercu;
+		}
+			
+		.navbar {
+			transition: all .4s;
+		}
+
+		.navbar.hide {
+			transform: translateY(-100%);
+		}
+		</style>
+		<title>CICT Website</title>
+		<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap-grid.min.css">
+		<!-- <link rel="stylesheet" href="css/pst/owncss.css"> -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="css/fixed.css">
+		<link rel="stylesheet" href="css/pst/style.css">
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/about.css">
+		<link rel="stylesheet" href="css/one.css">
+		<link rel = "shortcut icon" type = "image/png" href = "img/CICT.png">
+
+		<script>
+			$(document).ready(function(){
+				var zero = 0;
+				$(window).on('scroll', function(){
+					$('.navbar').toggleClass('hide', $(window).scrollTop() > zero);
+					zero = $(window).scrollTop();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<!-- navigation -->
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #42464A;">
+			<a class="navbar-brand" href="#">
+				<img src="img/CICT.png" width="78" height="78" class="d-inline-block align-top">
+			</a>
+			<p class="titles">College of Information and<br> Communications Technology</p>
+	
+			<div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="home.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="grades.html">Grades</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="schedule.html">Schedules</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="event.html">Events</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="calendar.html">Calendar</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="about.html">About Us</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- CICT Legend Title -->
+		<div class="row m-0" style="margin-top: 104px !important;">
+			<div class="header3">
+				<h3>CICT Legend</h3>
+			</div>
+		</div>
+
+		<!-- Image Slider -->
+		<div class="slide-container mb-5">
+			<input type="radio" name="images" id="i1" checked>
+			<input type="radio" name="images" id="i2">
+			<input type="radio" name="images" id="i3">
+			<input type="radio" name="images" id="i4">
+			<input type="radio" name="images" id="i5">
+			<input type="radio" name="images" id="i6">
+
+			<div class="slide_img" id="one">
+				<img src="img/legend/3F.jpg">
+
+				<label for="i6" class="pre"><div class="pre_icon">&#10094;</div></label>
+				<label for="i2" class="nxt"><div class="nxt_icon">&#10095;</div></label>
+			</div>
+
+			<div class="slide_img" id="two">
+				<img src="img/legend/4F.jpg">
+
+				<label for="i1" class="pre"><div class="pre_icon">&#10094;</div></label>
+				<label for="i3" class="nxt"><div class="nxt_icon">&#10095;</div></label>
+			</div>
+
+			<div class="slide_img" id="three">
+				<img src="img/legend/CONG.jpg">
+
+				<label for="i2" class="pre"><div class="pre_icon">&#10094;</div></label>
+				<label for="i4" class="nxt"><div class="nxt_icon">&#10095;</div></label>
+			</div>
+
+			<div class="slide_img" id="four">
+				<img src="img/legend/ATH1.jpg">
+
+				<label for="i3" class="pre"><div class="pre_icon">&#10094;</div></label>
+				<label for="i5" class="nxt"><div class="nxt_icon">&#10095;</div></label>
+			</div>
+
+			<div class="slide_img" id="five">
+				<img src="img/legend/ATH2.jpg">
+
+				<label for="i4" class="pre"><div class="pre_icon">&#10094;</div></label>
+				<label for="i6" class="nxt"><div class="nxt_icon">&#10095;</div></label>
+			</div>
+
+			<div class="slide_img" id="six">
+				<img src="img/legend/LAW.jpg">
+
+				<label for="i5" class="pre"><div class="pre_icon">&#10094;</div></label>
+				<label for="i1" class="nxt"><div class="nxt_icon">&#10095;</div></label>
+			</div>
+
+			<div class="slider_nav">
+				<label for="i1" class="dots" id="dot1"></label>
+				<label for="i2" class="dots" id="dot2"></label>
+				<label for="i3" class="dots" id="dot3"></label>
+				<label for="i4" class="dots" id="dot4"></label>
+				<label for="i5" class="dots" id="dot5"></label>
+				<label for="i6" class="dots" id="dot6"></label>
+			</div>
+		</div>
+
+		<div class = "slider">
+			<div class = "header">
+				<h1 style="text-align: center;">About CICT</h1>
+			</div>
+			<div class="announcements">
+				<h4>ABOUT BulSU</h4>  
+				<p style="text-indent: 50px;">BULACAN STATE UNIVERSITY (BulSU) is the premiere state-operated institution of higher learning in the Cenral Luzon region. It originated as a secondary school run by the Americans in 1904, and has now progressed into one of the biggest educational institutions in Region III. BulSU was converted from a college into a University in 1993 by virtue of Republic Act 7665. Since then, BulSU has grown by leaps and bounds, in terms of program offerings, faculty qualification, and student enrolment. It is the vision of the University to be a knowledge-generating institution globally recognized for excellent instruction, pioneering research, and responsive community engagement. The University has also maintained the existence of four external campuses within the province namely Meneses Campus, Hagonoy Campus, Sarmiento Campus, and Bustos Campus</p>
+				<p style="text-indent: 50px;">The University has been consistently producing highly professional, ethical, and service-oriented individuals who perform well in board examinations with impressive results consistently exceeding the National Passing Rate and become potent driving force in the industries in the region and beyond. BulSU has recently received its ISO 9001:2015 Certification, passed the Level II Institutional Accreditation while 50 academic programs of the different Colleges are already accredited by the Accrediting Agency of Chartered Colleges and Universities (AACCUP), Inc. This was made possible through the persistent hardwork and resolute service of its 1,138 faculty members and 476 non-teaching personnel who relentlessly cater and furnish the needs of our 35,958 students.</p>
+				<h4>VISION</h4>
+				<p style="text-indent: 50px;">Bulacan State University is a progressive knowledge-generating institution globally recognized for excellent instruction, pioneering research, and responsive community engagements</p>
+				<h4>MISSION</h4>
+				<p style="text-indent: 50px;">Bulacan State University exists to produce highly competent, ethical and service-oriented professionals that contribute to the sustainable socio-economic growth and development of the nation</p>
+			</div>
+		</div>
+
+		<!-- Dean -->
+		<div class="row m-0">
+			<div class="header1">
+				<h3>Organizational Chart</h3>
+			</div>
+
+			<div class="col-md-2 m-auto">
+				<img src="img/faculty/noemi.jpg" class="img-fluid rounded p-0">
+				<h5 class="text-center mb-0 mt-1">Noemi P. Reyes</h5>
+				<p class="text-center">DEAN</p>
+			</div>
+		</div>
+
+		<!-- T1 Faculty -->
+		<div class="row m-0">
+			<div class="col-md-2 ml-auto">
+				<img src="img/faculty/aaron.jpg" class="img-fluid rounded p-0">
+				<h5 class="text-center mb-0 mt-1">Paul Aaron Dela Rosa</h5>
+				<p class="text-center">FACULTY</p>
+			</div>
+			
+			<div class="col-md-2 mx-5">
+				<img src="img/faculty/jane.jpg" class="img-fluid rounded p-0">
+				<h5 class="text-center mb-0 mt-1">Jane Kristine Suarez</h5>
+				<p class="text-center">FACULTY</p>
+			</div>
+
+			<div class="col-md-2 mr-auto">
+				<img src="img/faculty/lester.jpg" class="img-fluid rounded p-0">
+				<h5 class="text-center mb-0 mt-1">Lester Phil Cruz</h5>
+				<p class="text-center">FACULTY</p>
+			</div>
+		</div>
+
+		<!-- T2 Faculty -->
+		<div class="row m-0">
+			<div class="col-md-2 ml-auto">
+				<img src="img/faculty/dona.jpg" class="img-fluid rounded p-0">
+				<h5 class="text-center mb-0 mt-1">Dona Fernando</h5>
+				<p class="text-center">FACULTY</p>
+			</div>
+			
+			<div class="col-md-2 mx-5">
+				<img src="img/faculty/lorraine.jpg" class="img-fluid rounded p-0">
+				<h5 class="text-center mb-0 mt-1">Lorraine Tolentino</h5>
+				<p class="text-center">FACULTY</p>
+			</div>
+
+			<div class="col-md-2 mr-auto">
+				<img src="img/faculty/jayson.jpg" class="img-fluid rounded p-0">
+				<h5 class="text-center mb-0 mt-1">Jayson Batoon</h5>
+				<p class="text-center">FACULTY</p>
+			</div>
+		</div>
+
+		<!-- Payrpaks -->
+		<div class="row m-0">
+			<div class="header2">
+				<h3>CICT Firefox</h3>
+			</div>
+		</div>
+
+		<div class="row m-0">
+			<div class="col-md-2 ml-auto">
+				<img src="img/firefox/58604165_1394786864008110_3326186458305265664_n.jpg" class="img-fluid rounded p-0">
+			</div>
+			
+			<div class="col-md-2 mx-5">
+				<img src="img/firefox/58382018_638068379970258_3094365843316801536_n.jpg" class="img-fluid rounded p-0">
+			</div>
+
+			<div class="col-md-2 mr-auto">
+				<img src="img/firefox/59163344_376779676512850_1148532121044779008_n.jpg" class="img-fluid rounded p-0">
+			</div>
+		</div>
+
+		<div class="row m-0">
+			<div class="col-md-2 ml-auto">
+				<img src="img/firefox/58381295_575340346290714_2418070337154449408_n.jpg" class="img-fluid rounded p-0">
+			</div>
+			
+			<div class="col-md-2 mx-5">
+				<img src="img/firefox/58441739_173182636949082_4149879615659180032_n.jpg" class="img-fluid rounded p-0">
+			</div>
+
+			<div class="col-md-2 mr-auto">
+				<img src="img/firefox/58619854_600670587113016_3003906775431774208_n.jpg" class="img-fluid rounded p-0">
+			</div>
+		</div>
+
+		<footer class="w-100 float-left align-bottom mt-5" style="height: 250px; background-color: #42464A; border-top: 5px solid #ea5a5a;">
+			<div class="row m-0">
+				<div class="col-md-6 mt-4 ml-5">
+					<p class="text-white">LINKS</p>
+					<a href="home.html"><p class="text-white m-1">Home</p></a>
+					<a href="grades.html"><p class="text-white m-1">Grades</p></a>
+					<a href="schedule.html"><p class="text-white m-1">Schedules</p></a>
+					<a href="event.html"><p class="text-white m-1">Events</p></a>
+					<a href="calendar.html"><p class="text-white m-1">Calendar</p></a>
+					<a href="about.html"><p class="text-white m-1">About Us</p></a>
+				</div>
+	
+				<div class="col-md-5 mt-4">
+					<p class="text-white">CONTACT US</p>
+					<p class="text-white m-1">
+						<img src="img/envelope.svg" class="mr-1" height="32px" width="32px"/>
+						noelbartolome94@gmail.com
+					</p>
+					<p class="text-white m-1">
+						<img src="img/phone-call.svg" class="mr-1" height="32px" width="32px"/>
+						09067102818
+					</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!---- Java Script -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap-4.1.3-dist/css/bootstrap.min.css"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <!--END js-->
+
+    <script>
+            // When the user clicks on div, open the popup
+            function myFunction() {
+              var popup = document.getElementById("myPopup");
+              popup.classList.toggle("show");
+            }
+	</script>
+	<!-- <footer>
+		<a class = "navbar-brand" href = "admin.php"><img src = "img/CICT.png"style = "height: 40px;width: 40px;position:absolute;right:1110px;"></a>
+		<a class = "navbar-brand" href = "admin.php"><img src = "img/bsu.png" style = "height: 40px;width: 40px;position:absolute;left:1085px;"></a>
+		<p>Hi©2019 Group of Noel Bartolome || Bartolome, Noel R., Oaquiera, James Patrick DL., Marcelo, John Luis A., Rafael, Roco || BSIT 4O-G1</p>
+	</footer> -->
+	</body>
+</html>
